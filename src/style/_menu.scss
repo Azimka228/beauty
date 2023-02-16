@@ -1,0 +1,19 @@
+.menu {
+  min-height: 50px;
+  background-color: #EFEFEF;;
+
+  &-block {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    min-height: 50px;
+    align-items: center;
+    & > li:not(:last-child) {
+      margin-right: 30px;
+    }
+    & > li > a {
+      text-decoration: none;
+      color: $Dark;
+    }
+  }
+}

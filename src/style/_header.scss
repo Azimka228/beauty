@@ -1,0 +1,30 @@
+header{
+  min-height: 200px;
+}
+.header-information{
+  border: 1px solid $Gray;
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+}
+.app-logo{
+  display: flex;
+  align-items: center;
+  &-img{
+    max-height: 80px;
+    max-width: 80px;
+    margin-right: 20px;
+  }
+  &-text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: $Accent;
+  }
+}
