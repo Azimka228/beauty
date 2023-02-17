@@ -1,13 +1,48 @@
+@import "./_var.scss";
+
 header{
   min-height: 200px;
 }
 .header-information{
   border: 1px solid $Gray;
+  &-tel > p {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  &-feedback{
+    display: flex;
+    align-items: center;
+  }
   &-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
+    @media only screen and (min-width: 0px) and (max-width:  $smallWidth){
+      &{
+        flex-direction: column;
+      }
+    }
+  }
+  &-button > button {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 2px solid $Accent;
+    transition: background-color 0.4s ease-in-out;
+    margin-left: 40px;
+    &:hover{
+      cursor: pointer;
+      background-color: $Gray;
+    }
   }
 }
 .app-logo{
@@ -26,5 +61,23 @@ header{
     line-height: 42px;
     letter-spacing: 0.1em;
     color: $Accent;
+  }
+}
+.header-nav {
+  min-height: 79px;
+  &-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    min-height: 79px;
+    align-items: center;
+    & > li:not(:last-child) {
+      margin-right: 40px;
+    }
+    & > li > a {
+      text-decoration: none;
+      color: #000000;;
+    }
   }
 }

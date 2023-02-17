@@ -1,0 +1,19 @@
+@import "./_var.scss";
+
+.small-button {
+  border-radius: 30px;
+  padding: 9px 25px 9px 25px;
+
+  &:hover {
+    cursor: pointer
+  }
+}
+
+.big-button {
+  border-radius: 40px;
+  padding: 12px 26px 13px 27px;
+
+  &:hover {
+    cursor: pointer
+  }
+}

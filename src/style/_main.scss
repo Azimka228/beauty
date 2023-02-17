@@ -1,0 +1,89 @@
+@import "./_var.scss";
+
+.main {
+  background-image: url("img/main/backgorund.png");
+  background-size: cover;
+  background-position: center;
+  max-height: 604px;
+  position: relative;
+  overflow: hidden;
+  @media only screen and (min-width: $mediumWidth) and (max-width: $largeWidth){
+    &{
+      max-height: 504px;
+    }
+  }
+  @media only screen and (min-width: $smallWidth) and (max-width: $mediumWidth){
+    &{
+      max-height: 404px;
+    }
+  }
+  @media only screen and (min-width: 0px) and (max-width: $smallWidth){
+    &{
+      max-height: 304px;
+    }
+  }
+  &-information{
+    padding: 182px 0 182px 0;
+    max-width: 330px;
+    @media only screen and (min-width: $mediumWidth) and (max-width: $largeWidth){
+      &{
+        padding: 142px 0 142px 0;
+      }
+    }
+    @media only screen and (min-width: $smallWidth) and (max-width: $mediumWidth){
+      &{
+        padding: 62px 0 62px 0;
+      }
+    }
+    @media only screen and (min-width: 0px) and (max-width: $smallWidth){
+      &{
+        padding: 22px 0 22px 0;
+      }
+    }
+    &-title {
+      margin-bottom: 50px;
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      color: #FFFFFF;
+    }
+    &-description {
+      margin-bottom: 50px;
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #FFFFFF;
+      @media only screen and (min-width: 0px) and (max-width: $smallWidth){
+        &{
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &-button{
+      @media only screen and (min-width: 0px) and (max-width: $smallWidth){
+        &{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    &-button > button {
+      background: #66C05D;
+      border: 2px solid #FFFFFF;
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+
+    }
+  }
+
+}

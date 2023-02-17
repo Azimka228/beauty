@@ -1,0 +1,98 @@
+@import "./_var.scss";
+.userFeedback{
+  background-color: $Gray;
+  padding-bottom: 133px;
+  &-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 1em;
+    @media only screen and (min-width: 0px) and (max-width: $largeWidth){
+      &{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    &-item{
+      padding: 35px 40px 35px 40px;
+      background-color: $Accent;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      @media only screen and (min-width: 0px) and (max-width:  $smallWidth){
+        &{
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &-img{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media only screen and (min-width: 0px) and (max-width:  $smallWidth){
+          &{
+            justify-content: center;
+          }
+        }
+      }
+      &-main{
+        @media only screen and (min-width: 0px) and (max-width:  $smallWidth){
+          &{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+        &-title{
+          font-family: 'Roboto',sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #FFFFFF;
+        }
+        &-description{
+          font-family: 'Roboto',sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #FFFFFF;
+          margin-top: 25px;
+          margin-bottom: 25px;
+        }
+        &-input > input{
+          box-sizing: border-box;
+          padding: 9px 25px 9px;
+          border: none;
+          background: #FFFFFF;
+          border-radius: 30px;
+          max-width: 225px;
+          transition: box-shadow 0.3s ease-in-out;
+          &::placeholder{
+            font-family: 'Roboto',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #C4C4C4;
+          }
+          &:focus{
+            outline: none;
+            box-shadow: 2px 2px 2px black;
+          }
+        }
+        &-button > button {
+          background: $Accent;
+          border: 2px solid #FFFFFF;
+          color: #FFFFFF;
+          font-family: 'Roboto',sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          padding-left: 29px;
+          padding-right: 29px;
+        }
+      }
+    }
+  }
+}

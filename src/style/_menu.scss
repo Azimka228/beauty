@@ -4,6 +4,7 @@
 
   &-block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     min-height: 50px;
